@@ -48,30 +48,32 @@
     margin-left: auto;
     margin-right: auto;
 }
-.marvel-at-home{
-    max-width: var(--at-home-width);
-    padding: 10px;
-    margin: auto;
-    padding: 10px 20px 0 20px;
+.marvel-at-home__item{
+    width: 25%;
+    margin-right: 8px;
 }
-.marvel-at-home__title{
-    font-family: var(--text-secondary);
-    font-size: 16px;
+.marvel-at-home__title:hover{
+    color: red;
 }
-.narvel-at-home-image{
-
+.marvel-at-home__item:last-child{
+    margin-right: 0;
+}
+.marvel-at-home__list{
+    display: flex; /*Alinea el contenido en una sola linea*/
+}
+.marvel-at-home__image img{
+    width: 100%;
+    height: auto;
 }
 .marvel-at-home__category{
     color: var(--grey);
 }
-.marvel-at-home__text{
-    max-width: 200px;
-    color: #151515;
+.marvel-at-home__title{
     font-weight: 700;
-    margin: 8px 0 0;
-    cursor: pointer;
-    display: block;
 }
+
+
+
 /*selecto de clase . y selector de id #*/
 /* especificidad= que tan especifico esyu selector es decir la  manera en la que el navegador da la prioridad a una declaracion css de ser 
 tomada en cuenta* /
