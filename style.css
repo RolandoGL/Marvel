@@ -1,0 +1,77 @@
+:root {
+    --color-background: #202020;
+    --grey: #999;
+    --robotoCondensed: 'Roboto Condensed';
+    --roboto:"Roboto" ; 
+    --text-primary: var(roboto);
+    --text-secondary: var(robotoCondended);
+    --max-width: 960px;
+    --at-home-width: 1240px;
+}
+*{
+    /* selector universal */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.navigation{
+    background: var(--color-background);
+    text-decoration: none;
+    font-family: var(--text-secondary) ;
+    border: 1px solid #393939;
+}
+.navigation__list{
+    display: flex; /* posiciona los elementos en una sola linea*/
+    list-style: none;
+    justify-content: space-between;/*alinea el contenido */
+    max-width: 680px;
+}
+.navigation__link{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.header{
+    background-color: var(--color-background);
+}
+.header__image{
+    display: block;
+}
+.navigation__item{
+    padding: 10px, 18px;
+}
+.container{
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+.marvel-at-home{
+    max-width: var(--at-home-width);
+    padding: 10px;
+    margin: auto;
+    padding: 10px 20px 0 20px;
+}
+.marvel-at-home__title{
+    font-family: var(--text-secondary);
+    font-size: 16px;
+}
+.narvel-at-home-image{
+
+}
+.marvel-at-home__category{
+    color: var(--grey);
+}
+.marvel-at-home__text{
+    max-width: 200px;
+    color: #151515;
+    font-weight: 700;
+    margin: 8px 0 0;
+    cursor: pointer;
+    display: block;
+}
+/*selecto de clase . y selector de id #*/
+/* especificidad= que tan especifico esyu selector es decir la  manera en la que el navegador da la prioridad a una declaracion css de ser 
+tomada en cuenta* /
