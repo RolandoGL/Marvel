@@ -8,6 +8,7 @@
     --max-width: 960px;
     --at-home-width: 1240px;
 }
+
 *{
     /* selector universal */
     margin: 0;
@@ -26,6 +27,9 @@
     justify-content: space-between;/*alinea el contenido */
     max-width: 680px;
 }
+.navigation__item{
+    padding: 10px 18px;
+}
 .navigation__link{
     text-decoration: none;
     color: white;
@@ -39,9 +43,6 @@
 }
 .header__image{
     display: block;
-}
-.navigation__item{
-    padding: 10px, 18px;
 }
 .container{
     max-width: var(--max-width);
@@ -71,9 +72,35 @@
 .marvel-at-home__title{
     font-weight: 700;
 }
-
-
-
+.marvel-podcast__list{
+    display: flex;
+}
+.marvel-podcast__image img{
+    width: 100%;
+    height: auto;
+}
+.marvel-podcast__category{
+    color: var(--grey);
+}
+.marvel-podcast__title:hover{
+    color: red;
+}
+.marvel-podcast__title{
+    font-weight: 700;
+}
+.marvel-podcast__item{
+    margin-right: 8px;
+}
+.marvel-podcast__item:last-child{
+    margin-right: 0;
+}
+.section1{
+padding: 30px 0 45px;
+}
+h3{
+    padding: 26px 0 ;
+    line-height: 0.9;
+}
 /*selecto de clase . y selector de id #*/
 /* especificidad= que tan especifico esyu selector es decir la  manera en la que el navegador da la prioridad a una declaracion css de ser 
 tomada en cuenta* /
