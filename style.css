@@ -1,12 +1,14 @@
 :root {
     --color-background: #202020;
     --grey: #999;
+    --red: #e62429;
     --robotoCondensed: 'Roboto Condensed';
     --roboto-bold:"Roboto" ; 
     --text-primary: var(--roboto-bold);
     --text-secondary: var(--robotoCondensed);
     --max-width: 960px;
     --at-home-width: 1240px;
+    
 }
 body{
     font-family: var(--text-primary);
@@ -50,6 +52,44 @@ body{
     max-width: var(--max-width);
     margin-left: auto;
     margin-right: auto;
+}
+.banner{
+    background-color: coral;
+    height: 500px;
+}
+.banner__container{
+    /*padre*/
+    display: flex; /**/
+    align-items: center;/*centra los elementos del contendor*/
+    height: 500px;
+}
+.banner__content{
+    color: white;
+}
+.banner__title{
+    font-family: var(--text-secondary);
+    font-weight: 500;
+    font-size: 44px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.banner__description{
+    letter-spacing: 0.5px;
+
+}
+.banner__links{
+    margin-top: 25px;
+}
+.banner__links a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--red);
+    padding: 10px;
+}
+.banner{
+    background-image: url("./Imagenes/wandavision_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .marvel-at-home__item{
     width: 25%;
