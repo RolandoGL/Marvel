@@ -2,13 +2,15 @@
     --color-background: #202020;
     --grey: #999;
     --robotoCondensed: 'Roboto Condensed';
-    --roboto:"Roboto" ; 
-    --text-primary: var(--roboto);
-    --text-secondary: var(--robotoCondended);
+    --roboto-bold:"Roboto" ; 
+    --text-primary: var(--roboto-bold);
+    --text-secondary: var(--robotoCondensed);
     --max-width: 960px;
     --at-home-width: 1240px;
 }
-
+body{
+    font-family: var(--text-primary);
+}
 *{
     /* selector universal */
     margin: 0;
@@ -64,8 +66,9 @@
     display: flex; /*Alinea el contenido en una sola linea*/
 }
 .marvel-at-home__image img{
-    width: 100%;    height: 130px;
-    overflow: hidden;
+    width: 100%;    
+    height: 130px;
+    overflow: hidden; /* ajusta el contenido y ajusta*/
 }
 
 .marvel-at-home__category{
@@ -101,7 +104,7 @@
 .marvel-podcast__item{
     width: 25%;
     margin-right: 8px;
-
+    display: block;
 }
 .marvel-podcast__item:last-child{
     margin-right: 0;
