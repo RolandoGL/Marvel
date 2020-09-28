@@ -19,6 +19,7 @@ body{
     padding: 0;
     text-decoration: none;
 }
+/*_____________________________________________________________*/
 .navigation{
     background: var(--color-background);
     text-decoration: none;
@@ -48,11 +49,13 @@ body{
 .header__image{
     display: block;
 }
+/*_____________________________________________________________*/
 .container{
     max-width: var(--max-width);
     margin-left: auto;
     margin-right: auto;
 }
+/*_____________________________________________________________*/
 .banner{
     background-color: coral;
     height: 500px;
@@ -91,6 +94,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*_____________________________________________________________*/
 .marvel-at-home__item{
     width: 25%;
     margin-right: 8px;
@@ -110,7 +114,6 @@ body{
     height: 130px;
     overflow: hidden; /* ajusta el contenido y ajusta*/
 }
-
 .marvel-at-home__category{
     color: var(--grey);
     font-size: 13px;
@@ -124,6 +127,7 @@ body{
 .marvel-podcast__list{
     display: flex;
 }
+/*_____________________________________________________________*/
 .marvel-podcast__image img{
     width: 100%;
     height: auto;
@@ -149,6 +153,7 @@ body{
 .marvel-podcast__item:last-child{
     margin-right: 0;
 }
+/*_____________________________________________________________*/
 .section1{
 padding: 30px 0 45px;
 }
@@ -157,6 +162,49 @@ h3{
     line-height: 0.9;
     font-family: var(--robotoCondensed);
 }
+/*_____________________________________________________________*/
+.marvel-unlimited__container{
+    background-color: #151515;
+    background-image: url("/Imagenes/marvel-unlimited-background.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 50px;
+}
+.marvel-unlimited__title{
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: var(--robotoCondensed);
+    margin: 35px 0;
+}
+.marvel-unlimited__content{
+    color: white;
+    max-width: 500px;
+    margin: 0 0 0 50px;
+}
+.marvel-unlimited__tilte1{
+    font: 800 26px/1 RobotoCondensed,Trebuchet MS,Helvetica,Arial,sans-serif;
+    padding: 0 0 10px;
+}
+.marvel-unlimited__description{
+    font-size: 14px ;
+    font-family: var(--roboto-bold);
+    margin: 0 0 25px;
+}
+.marvel-unlimited__links a{
+    text-decoration: none;
+    font-family: var(--robotoCondensed);
+    font-size: 14px;
+    color: white;
+}
+.marvel-unlimited__links{
+    background-color: red;
+    border-style: solid;
+    border-width: 1px;
+}
+/*_____________________________________________________________*/
 /*selecto de clase . y selector de id #*/
 /* especificidad= que tan especifico esyu selector es decir la  manera en la que el navegador da la prioridad a una declaracion css de ser 
 tomada en cuenta* /
