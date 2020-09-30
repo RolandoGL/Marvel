@@ -164,13 +164,20 @@ h3{
 }
 /*_____________________________________________________________*/
 .marvel-unlimited__container{
-    background-color: #151515;
-    background-image: url("./Imagenes/marvel-unlimited-background.jpg");
-    background-repeat: no-repeat;
+    background-color: black;
+    position: relative;
     height: 500px;
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 50px;
+    width: 100%;
+}
+.marvel-unlimited__background{
+    background-image: url("./Imagenes/marvel-unlimited-background.jpg");
+    position: absolute;
+    width: 56%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 44%;
 }
 .marvel-unlimited__title{
     letter-spacing: 4px;
@@ -180,9 +187,13 @@ h3{
     margin: 35px 0;
 }
 .marvel-unlimited__content{
+    position: relative;
+    z-index: 1;
     color: white;
-    max-width: 500px;
-    margin: 0 0 0 50px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 .marvel-unlimited__tilte1{
     font: 800 26px/1 RobotoCondensed,Trebuchet MS,Helvetica,Arial,sans-serif;
@@ -191,18 +202,16 @@ h3{
 .marvel-unlimited__description{
     font-size: 14px ;
     font-family: var(--roboto-bold);
-    margin: 0 0 25px;
+    padding: 0 0 25px;
 }
-.marvel-unlimited__links a{
+.marvel-unlimited__links{
     text-decoration: none;
     font-family: var(--robotoCondensed);
     font-size: 14px;
     color: white;
-}
-.marvel-unlimited__links{
-    background-color: red;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px white ;
+    display: inline;
+    padding: 5px;
 }
 /*_____________________________________________________________*/
 /*selecto de clase . y selector de id #*/
