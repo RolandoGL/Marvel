@@ -191,27 +191,30 @@ h3{
     z-index: 1;
     color: white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
-    width: 100%;
 }
 .marvel-unlimited__tilte1{
-    font: 800 26px/1 RobotoCondensed,Trebuchet MS,Helvetica,Arial,sans-serif;
+    font-family: var(--robotoCondensed);
+    font-size: 40px;
     padding: 0 0 10px;
 }
 .marvel-unlimited__description{
     font-size: 14px ;
     font-family: var(--roboto-bold);
-    padding: 0 0 25px;
+    padding: 0 0 30px;
 }
 .marvel-unlimited__links{
-    text-decoration: none;
+    width: max-content;
+}
+.marvel-unlimited__links a{
+    width: max-content;
+    color: white;
     font-family: var(--robotoCondensed);
     font-size: 14px;
-    color: white;
-    border: solid 1px white ;
-    display: inline;
-    padding: 5px;
+    border: solid 1px white;
+    padding: 10px;
 }
 /*____________________________________________________________*/
 /*selecto de clase . y selector de id #*/_
