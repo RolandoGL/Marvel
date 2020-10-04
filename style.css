@@ -163,21 +163,31 @@ h3{
     font-family: var(--robotoCondensed);
 }
 /*_____________________________________________________________*/
-.marvel-unlimited__container{
+.marvel-unlimited{
     background-color: black;
     position: relative;
     height: 500px;
     width: 100%;
+    overflow: hidden;
 }
-.marvel-unlimited__background{
-    background-image: url("./Imagenes/marvel-unlimited-background.jpg");
+/*.marvel-unlimited::before{
+    content: "";
     position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+}*/
+.marvel-unlimited::after{
+    content: "";
+    position: absolute;
+    background-image: url("./Imagenes/marvel-unlimited-background.jpg");
     width: 56%;
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    left: 44%;
+    left: 50%;
+    top: 0;
 }
 .marvel-unlimited__title{
     letter-spacing: 4px;
@@ -207,8 +217,6 @@ h3{
 }
 .marvel-unlimited__links{
     width: max-content;
-}
-.marvel-unlimited__links a{
     width: max-content;
     color: white;
     font-family: var(--robotoCondensed);
@@ -216,7 +224,6 @@ h3{
     border: solid 1px white;
     padding: 10px;
 }
-/*___________________________________________________________*/
 /*selecto de clase . y selector de id #*/_
 /* especificidad= que tan especifico esyu selector es decir la  manera en la que el navegador da la prioridad a una declaracion css de ser 
 tomada en cuenta* /
