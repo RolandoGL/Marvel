@@ -217,12 +217,67 @@ h3{
 }
 .marvel-unlimited__links{
     width: max-content;
-    width: max-content;
     color: white;
     font-family: var(--robotoCondensed);
     font-size: 14px;
     border: solid 1px white;
     padding: 10px;
+}
+.set-heroes{
+    margin-top: 20px;
+    background-color: black;
+    position: relative;
+    height: 560px;
+    width: 100%;
+    overflow: hidden;
+}
+.set-heroes::after{
+    content: "";
+    position: absolute;
+    background-image: url("./Imagenes/set_hero_background.jpg");
+    width: 56%;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 50%;
+    top: 0;
+}
+.set-heroes__content{
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+}
+.set-heroes__date{
+    padding: 20px 0;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-family: var(--robotoCondensed);
+}
+.set-heroes__title{
+    font-family: var(--robotoCondensed);
+    font-size: 40px;
+}
+.set-heroes__description{
+    padding: 20px 0;
+    font-family: var(--robotoCondensed);
+}
+.set-heroes__linksContainer {
+    padding-top: 20px;
+}
+.set-heroes_links{
+    color: white;
+    text-decoration: none;
+    display: inline;
+    border: solid 1px white;
+    padding: 10px;
+    font-family: var(--robotoCondensed);
+    font-size: 14px;
+    margin-right: 15px;
 }
 /*selecto de clase . y selector de id #*/_
 /* especificidad= que tan especifico esyu selector es decir la  manera en la que el navegador da la prioridad a una declaracion css de ser 
