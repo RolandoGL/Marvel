@@ -8,7 +8,7 @@
     --text-secondary: var(--robotoCondensed);
     --max-width: 960px;
     --at-home-width: 1240px;
-    
+    --minWidth:500px;
 }
 body{
     font-family: var(--text-primary);
@@ -106,9 +106,7 @@ body{
 .marvel-at-home__item:last-child{
     margin-right: 0;
 }
-.marvel-at-home__list{
-    display: flex; /*Alinea el contenido en una sola linea*/
-}
+
 .marvel-at-home__image img{
     width: 100%;    
     height: 130px;
@@ -124,9 +122,7 @@ body{
     font-size: 15px;
     font-family: var(--robotoCondensed);
 }
-.marvel-podcast__list{
-    display: flex;
-}
+
 /*_____________________________________________________________*/
 .marvel-podcast__image img{
     width: 100%;
@@ -153,6 +149,14 @@ body{
 .marvel-podcast__item:last-child{
     margin-right: 0;
 }
+@media (min-width: 500px){
+    .marvel-at-home__list{
+        display: flex; /*Alinea el contenido en una sola linea*/
+    }
+    .marvel-podcast__list{
+        display: flex;
+    }
+}
 /*____________________________________________________________*/
 .section1{
 padding: 30px 0 45px;
@@ -166,35 +170,29 @@ h3{
 .marvel-unlimited{
     background-color: black;
     position: relative;
-    height: 500px;
-    width: 100%;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(0 0, 0 100%, 100% 92%, 100% 0);
+    padding-bottom: 60px;
+    margin-bottom: 50px;
 }
-/*.marvel-unlimited::before{
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    z-index: 1;
-}*/
 .marvel-unlimited::after{
     content: "";
-    position: absolute;
-    background-image: url("./Imagenes/marvel-unlimited-background.jpg");
-    width: 56%;
-    height: 500px;
+    background-image: url(./Imagenes/marvel-unlimited-background.jpg);
+    height: 280px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    left: 50%;
-    top: 0;
+    order: -1;
 }
+
 .marvel-unlimited__title{
     letter-spacing: 4px;
     font-weight: 500;
     font-size: 14px;
     font-family: var(--robotoCondensed);
     margin: 35px 0;
+    max-width: 500px;
 }
 .marvel-unlimited__content{
     position: relative;
@@ -204,17 +202,21 @@ h3{
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    padding: 60px 30px 80px;
 }
 .marvel-unlimited__tilte1{
     font-family: var(--robotoCondensed);
     font-size: 40px;
     padding: 0 0 10px;
+    max-width: 500px;
 }
 .marvel-unlimited__description{
     font-size: 14px ;
     font-family: var(--roboto-bold);
     padding: 0 0 30px;
+    max-width: 500px;
 }
+
 .marvel-unlimited__links{
     width: max-content;
     color: white;
@@ -223,25 +225,52 @@ h3{
     border: solid 1px white;
     padding: 10px;
 }
+@media (min-width:500px){
+    .marvel-unlimited{
+        overflow: hidden;
+        clip-path: polygon(0 0, 0 90%, 100% 89.5%, 100% 0);
+    }
+    .marvel-unlimited::before {
+        content: '';
+        z-index:1;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        height: 0;
+        width: 0;
+        border-bottom: 500px solid black;
+        border-right: 200px solid transparent;
+        
+        border-top: none;
+      }
+    .marvel-unlimited::after{
+        position: absolute;
+        height: 500px;
+        left: 50%;
+        top: 0;
+        width: 56%;
+    }
+    .marvel-unlimited__content{
+        width: 100%;
+    }
+
+}
 .set-heroes{
-    margin-top: 20px;
     background-color: black;
     position: relative;
-    height: 560px;
-    width: 100%;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(0 0, 0 100%, 100% 92%, 100% 0);
+    padding-bottom: 60px;
 }
 .set-heroes::after{
     content: "";
-    position: absolute;
     background-image: url("./Imagenes/set_hero_background.jpg");
-    width: 56%;
-    height: 560px;
+    height: 280px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    left: 50%;
-    top: 0;
+    order: -1;
 }
 .set-heroes__content{
     position: relative;
@@ -250,7 +279,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 500px;
+    padding: 60px 10px 80px;
 }
 .set-heroes__date{
     padding: 20px 0;
@@ -261,13 +290,17 @@ h3{
 .set-heroes__title{
     font-family: var(--robotoCondensed);
     font-size: 40px;
+
 }
 .set-heroes__description{
     padding: 20px 0;
     font-family: var(--robotoCondensed);
+
 }
 .set-heroes__linksContainer {
     padding-top: 20px;
+    max-width: max-content;
+    height: 39px;
 }
 .set-heroes_links{
     color: white;
@@ -278,6 +311,38 @@ h3{
     font-family: var(--robotoCondensed);
     font-size: 14px;
     margin-right: 15px;
+
+}
+@media (min-width:500px){
+    .set-heroes{
+        overflow: hidden;
+        display: block;
+        clip-path: polygon(0 0, 0 90%, 100% 89.5%, 100% 0);
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .set-heroes__content{
+        width: 100%;
+        padding: 0;
+        height: 500px;
+    }
+    .set-heroes::after{
+        position: absolute;
+        height: 500px;
+        left: 50%;
+        top: 0;
+        width: 56%;
+    }
+    .set-heroes::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: 560px solid black;
+        border-right: 260px solid transparent;
+        left: 50%;
+        z-index: 1;
+    }
 }
 /*selecto de clase . y selector de id #*/_
 /* especificidad= que tan especifico esyu selector es decir la  manera en la que el navegador da la prioridad a una declaracion css de ser 
